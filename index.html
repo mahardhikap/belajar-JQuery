@@ -25,6 +25,7 @@
     <button id="colorOrange">Ganti Oranye</button>
     <button id="colorBlue">Ganti Biru</button>
     <button id="colorNormal">Normal Color</button>
+    <button id="jadiBesar">Zoom List</button>
 
     <script src="jquery-3.6.4.min.js"></script>
     <script>
@@ -40,6 +41,11 @@
         $('#colorNormal').on('click', function () {
           $('.lokasi').removeClass('oranye');
           $('.lokasi').removeClass('biru');
+        });
+        $('#jadiBesar').on('click', function () {
+          $('.lokasi').css({
+            fontSize: 100,
+          });
         });
       });
     </script>
