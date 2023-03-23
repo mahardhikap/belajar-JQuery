@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .orange {
+      .oranye {
         color: orange;
       }
 
@@ -22,11 +22,17 @@
       <li class="surabaya">Surabaya</li>
       <li class="jakarta">Jakarta</li>
     </ul>
+    <button id="colorOrange">Ganti Oranye</button>
+    <button id="colorBlue">Ganti Biru</button>
     <script src="jquery-3.6.4.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('.bandung').addClass('orange');
-        $('.surabaya').addClass('biru');
+        $('#colorOrange').on('click', function () {
+          $('.lokasi').addClass('oranye');
+        });
+        $('#colorBlue').on('click', function () {
+          $('.lokasi').addClass('biru');
+        });
       });
     </script>
   </body>
