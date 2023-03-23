@@ -4,49 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .oranye {
-        color: orange;
-      }
-
-      .biru {
-        color: blue;
-      }
-    </style>
+    <title>JQuery Slick</title>
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
   </head>
   <body>
-    <h1>Kemana kamu ingin pergi?</h1>
-    <ul class="lokasi">
-      <li class="bandung">Bandung</li>
-      <li class="surabaya">Surabaya</li>
-      <li class="jakarta">Jakarta</li>
-    </ul>
-    <button id="colorOrange">Ganti Oranye</button>
-    <button id="colorBlue">Ganti Biru</button>
-    <button id="colorNormal">Normal Color</button>
-    <button id="jadiBesar">Zoom List</button>
+    <div class="your-class">
+      <div>
+        <h1>Konten 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat, quibusdam sunt ut voluptatibus saepe tempora reprehenderit sed earum deserunt dolorum aliquid, neque velit repellendus deleniti nisi, illo necessitatibus quam?
+        Nihil excepturi repellat ducimus odio rem, accusamus nesciunt nam impedit vero nobis atque aliquid laborum facere obcaecati unde veniam sit repellendus delectus soluta eum quisquam hic ut adipisci ipsa. Numquam!
+        Consequatur eius nam minima. Tempora quos magni ipsa autem accusantium dolorem minus cupiditate, eaque id sit obcaecati illum enim facilis. Doloremque dolorem repudiandae dicta ipsa nihil numquam, ab aperiam id?</p>
+      </div>
+      <div>
+        <h1>Konten 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat, quibusdam sunt ut voluptatibus saepe tempora reprehenderit sed earum deserunt dolorum aliquid, neque velit repellendus deleniti nisi, illo necessitatibus quam?
+        Nihil excepturi repellat ducimus odio rem, accusamus nesciunt nam impedit vero nobis atque aliquid laborum facere obcaecati unde veniam sit repellendus delectus soluta eum quisquam hic ut adipisci ipsa. Numquam!
+        Consequatur eius nam minima. Tempora quos magni ipsa autem accusantium dolorem minus cupiditate, eaque id sit obcaecati illum enim facilis. Doloremque dolorem repudiandae dicta ipsa nihil numquam, ab aperiam id?</p>
+      </div>
+      <div>
+        <h1>Konten 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat, quibusdam sunt ut voluptatibus saepe tempora reprehenderit sed earum deserunt dolorum aliquid, neque velit repellendus deleniti nisi, illo necessitatibus quam?
+        Nihil excepturi repellat ducimus odio rem, accusamus nesciunt nam impedit vero nobis atque aliquid laborum facere obcaecati unde veniam sit repellendus delectus soluta eum quisquam hic ut adipisci ipsa. Numquam!
+        Consequatur eius nam minima. Tempora quos magni ipsa autem accusantium dolorem minus cupiditate, eaque id sit obcaecati illum enim facilis. Doloremque dolorem repudiandae dicta ipsa nihil numquam, ab aperiam id?</p>
+      </div>
+    </div>
 
     <script src="jquery-3.6.4.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('#colorOrange').on('click', function () {
-          $('.lokasi').removeClass('biru');
-          $('.lokasi').addClass('oranye');
-        });
-        $('#colorBlue').on('click', function () {
-          $('.lokasi').removeClass('oranye');
-          $('.lokasi').addClass('biru');
-        });
-        $('#colorNormal').on('click', function () {
-          $('.lokasi').removeClass('oranye');
-          $('.lokasi').removeClass('biru');
-        });
-        $('#jadiBesar').on('click', function () {
-          $('.lokasi').css({
-            fontSize: 100,
-          });
-        });
+        $('.your-class').slick({});
       });
     </script>
   </body>
