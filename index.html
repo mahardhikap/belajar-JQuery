@@ -24,6 +24,7 @@
       <li class="jakarta">Jakarta</li>
       <li><input type="text" class="inputan" value="100" /></li>
     </ul>
+    <button id="toggleBandung">Hide/Unhide Bandung</button>
     <script src="jquery-3.6.4.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -44,6 +45,9 @@
         );
         $('#hideBandung').on('click', function () {
           $('.bandung').slideUp(3000);
+        });
+        $('#toggleBandung').on('click', function () {
+          $('.bandung').toggle(3000);
         });
       });
     </script>
