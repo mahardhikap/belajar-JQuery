@@ -6,53 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .active {
-        color: red;
+      .orange {
+        color: orange;
+      }
+
+      .biru {
+        color: blue;
       }
     </style>
   </head>
   <body>
     <h1>Kemana kamu ingin pergi?</h1>
     <ul class="lokasi">
-      <li class="bandung">
-        Bandung
-        <button id="goBandung">Go!</button>
-        <button id="hideBandung">H</button>
-        <button id="delBandung">X</button>
-      </li>
+      <li class="bandung">Bandung</li>
       <li class="surabaya">Surabaya</li>
       <li class="jakarta">Jakarta</li>
-      <li><input type="text" class="inputan" value="100" /></li>
     </ul>
-    <button id="toggleBandung">Hide/Unhide Bandung</button>
-    <button id="markBandung">Mark Bandung</button>
     <script src="jquery-3.6.4.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('#goBandung').on('click', function () {
-          alert('Yakin pergi ke Bandung?');
-        });
-        $('#delBandung').on('click', function () {
-          $('.bandung').remove();
-          alert('Yakin hapus tujuan Bandung?');
-        });
-        $('li').hover(
-          function () {
-            $(this).addClass('active');
-          },
-          function () {
-            $(this).removeClass('active');
-          }
-        );
-        $('#hideBandung').on('click', function () {
-          $('.bandung').slideUp(3000);
-        });
-        $('#toggleBandung').on('click', function () {
-          $('.bandung').toggle(3000);
-        });
-        $('#markBandung').on('click', function () {
-          $('.bandung').animate({marginLeft:50}, 1000);
-        });
+        $('.bandung').addClass('orange');
+        $('.surabaya').addClass('biru');
       });
     </script>
   </body>
