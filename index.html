@@ -24,14 +24,22 @@
     </ul>
     <button id="colorOrange">Ganti Oranye</button>
     <button id="colorBlue">Ganti Biru</button>
+    <button id="colorNormal">Normal Color</button>
+
     <script src="jquery-3.6.4.min.js"></script>
     <script>
       $(document).ready(function () {
         $('#colorOrange').on('click', function () {
+          $('.lokasi').removeClass('biru');
           $('.lokasi').addClass('oranye');
         });
         $('#colorBlue').on('click', function () {
+          $('.lokasi').removeClass('oranye');
           $('.lokasi').addClass('biru');
+        });
+        $('#colorNormal').on('click', function () {
+          $('.lokasi').removeClass('oranye');
+          $('.lokasi').removeClass('biru');
         });
       });
     </script>
