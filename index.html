@@ -12,29 +12,28 @@
     <div class="your-class">
       <div>
         <h1>Konten 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat, quibusdam sunt ut voluptatibus saepe tempora reprehenderit sed earum deserunt dolorum aliquid, neque velit repellendus deleniti nisi, illo necessitatibus quam?
-        Nihil excepturi repellat ducimus odio rem, accusamus nesciunt nam impedit vero nobis atque aliquid laborum facere obcaecati unde veniam sit repellendus delectus soluta eum quisquam hic ut adipisci ipsa. Numquam!
-        Consequatur eius nam minima. Tempora quos magni ipsa autem accusantium dolorem minus cupiditate, eaque id sit obcaecati illum enim facilis. Doloremque dolorem repudiandae dicta ipsa nihil numquam, ab aperiam id?</p>
       </div>
       <div>
         <h1>Konten 2</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat, quibusdam sunt ut voluptatibus saepe tempora reprehenderit sed earum deserunt dolorum aliquid, neque velit repellendus deleniti nisi, illo necessitatibus quam?
-        Nihil excepturi repellat ducimus odio rem, accusamus nesciunt nam impedit vero nobis atque aliquid laborum facere obcaecati unde veniam sit repellendus delectus soluta eum quisquam hic ut adipisci ipsa. Numquam!
-        Consequatur eius nam minima. Tempora quos magni ipsa autem accusantium dolorem minus cupiditate, eaque id sit obcaecati illum enim facilis. Doloremque dolorem repudiandae dicta ipsa nihil numquam, ab aperiam id?</p>
       </div>
       <div>
         <h1>Konten 3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat, quibusdam sunt ut voluptatibus saepe tempora reprehenderit sed earum deserunt dolorum aliquid, neque velit repellendus deleniti nisi, illo necessitatibus quam?
-        Nihil excepturi repellat ducimus odio rem, accusamus nesciunt nam impedit vero nobis atque aliquid laborum facere obcaecati unde veniam sit repellendus delectus soluta eum quisquam hic ut adipisci ipsa. Numquam!
-        Consequatur eius nam minima. Tempora quos magni ipsa autem accusantium dolorem minus cupiditate, eaque id sit obcaecati illum enim facilis. Doloremque dolorem repudiandae dicta ipsa nihil numquam, ab aperiam id?</p>
       </div>
+    </div>
+    <button class="JPO_open">Open popup</button>
+    <div id="JPO">
+      {{ Popup Content }}
+      <!-- Add a button to close the popup (optional) -->
+      <button class="JPO_close">Close</button>
     </div>
 
     <script src="jquery-3.6.4.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="jquery-popup-overlay/jquery.popupoverlay.js"></script>
     <script>
       $(document).ready(function () {
         $('.your-class').slick({});
+        $('#JPO').popup();
       });
     </script>
   </body>
