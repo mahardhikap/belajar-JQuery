@@ -8,16 +8,28 @@
   </head>
   <body>
     <h1>Kemana kamu ingin pergi?</h1>
-    <ul>
-      <li class="amerika">Bandung</li>
+    <ul class="lokasi">
+      <li>Bandung</li>
       <li>Surabaya</li>
       <li>Jakarta</li>
     </ul>
     <script src="jquery-3.6.4.min.js"></script>
     <script>
       $(document).ready(function () {
-        console.log('JQuery sudah jalan');
-        $('.amerika').text('Amerika');
+        let jogja = $('<li>Yogyakarta</li>');
+        let bali = $('<li>Bali</li>');
+        let subjudul = $('<h2>Pilih destinasimu..</h2>');
+        let subjudul2 = $('<h3>Enjoy the trip</h3>');
+        let kali = $('<li>Kalimantan</li>');
+        let papua = $('<li>Papua</li>');
+
+        $('.lokasi').prepend(jogja);
+        $('.lokasi').append(bali);
+
+        $('.lokasi').before(subjudul);
+        $('.lokasi').after(subjudul2);
+        kali.prependTo($('.lokasi'));
+        papua.appendTo($('.lokasi'));
       });
     </script>
   </body>
