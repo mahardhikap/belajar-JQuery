@@ -9,7 +9,7 @@
   <body>
     <h1>Kemana kamu ingin pergi?</h1>
     <ul class="lokasi">
-      <li>Bandung</li>
+      <li class="bandung">Bandung</li>
       <li class="surabaya"><strong>Surabaya</strong></li>
       <li class="jakarta"><strong>Jakarta</strong></li>
       <li><input type="text" class="inputan" value="100" /></li>
@@ -17,9 +17,10 @@
     <script src="jquery-3.6.4.min.js"></script>
     <script>
       $(document).ready(function () {
-        console.log($('.surabaya').get());
-        console.log($('.jakarta').html());
-        console.log($('.inputan').val());
+        $('.bandung').text('Cimahi');
+        $('.surabaya').html('<i>Surabaya</i>');
+        $('.jakarta').text('Bogor');
+        $('.inputan').val(999);
       });
     </script>
   </body>
