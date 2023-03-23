@@ -25,6 +25,7 @@
       <li><input type="text" class="inputan" value="100" /></li>
     </ul>
     <button id="toggleBandung">Hide/Unhide Bandung</button>
+    <button id="markBandung">Mark Bandung</button>
     <script src="jquery-3.6.4.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -48,6 +49,9 @@
         });
         $('#toggleBandung').on('click', function () {
           $('.bandung').toggle(3000);
+        });
+        $('#markBandung').on('click', function () {
+          $('.bandung').animate({marginLeft:50}, 1000);
         });
       });
     </script>
