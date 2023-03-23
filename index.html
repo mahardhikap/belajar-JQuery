@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <h1>Kemana kamu ingin pergi?</h1>
+    <ul>
+      <li>Bandung</li>
+      <li>Surabaya</li>
+      <li>Jakarta</li>
+    </ul>
     <script src="jquery-3.6.4.min.js"></script>
-</body>
+    <script>
+      $(document).ready(function () {
+        console.log('JQuery sudah jalan');
+        $('li').text('Indonesia');
+      });
+    </script>
+  </body>
 </html>
